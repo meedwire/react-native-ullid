@@ -7,14 +7,18 @@ import com.facebook.react.module.annotations.ReactModule
 class UllidModule(reactContext: ReactApplicationContext) :
   NativeUllidSpec(reactContext) {
 
+    init {
+        System.loadLibrary("react-native-ullid")
+    }
+
   override fun getName(): String {
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+  external fun generateULLID(): String;
+  
+  override fun ULLID(): String {
+    return generateULLID()
   }
 
   companion object {

@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-ullid';
+import { ullid } from 'react-native-ullid';
 
-const result = multiply(3, 7);
+const result = ullid();
 
 export default function App() {
   return (

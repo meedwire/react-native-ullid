@@ -1,8 +1,10 @@
 #ifndef ULLID_H
 #define ULLID_H
 
+#include <jni.h>
+
 namespace ullid {
-  double multiply(double a, double b);
+    jstring generateULLID(JNIEnv *env);
 }
 
 #endif /* ULLID_H */

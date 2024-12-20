@@ -6,6 +6,8 @@ set (CMAKE_CXX_STANDARD 14)
 
 add_library(react-native-ullid            SHARED
             ../cpp/react-native-ullid.cpp
+            ../cpp/ullid-generator.h
+            ../cpp/ullid-generator.cpp
             cpp-adapter.cpp
 )
 
