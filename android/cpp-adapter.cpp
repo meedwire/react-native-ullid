@@ -4,5 +4,7 @@
 extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_ullid_UllidModule_generateULLID(JNIEnv *env, jobject thiz) {
-    return ullid::generateULLID(env);
+    std::string ullid = ullid::generateULLID();
+
+    return env->NewStringUTF(ullid.c_str());
 }

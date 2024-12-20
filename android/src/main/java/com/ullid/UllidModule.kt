@@ -16,7 +16,7 @@ class UllidModule(reactContext: ReactApplicationContext) :
   }
 
   external fun generateULLID(): String;
-  
+
   override fun ULLID(): String {
     return generateULLID()
   }

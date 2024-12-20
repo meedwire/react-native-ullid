@@ -3,10 +3,12 @@
 @implementation Ullid
 RCT_EXPORT_MODULE()
 
-- (NSNumber *)multiply:(double)a b:(double)b {
-    NSNumber *result = @(ullid::multiply(a, b));
+- (NSString *)ULLID {
+    std::string result = ullid::generateULLID();
+    
+    NSString *ullidString = [NSString stringWithUTF8String:result.c_str()];
 
-    return result;
+    return ullidString;
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
