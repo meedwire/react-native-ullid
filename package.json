@@ -1,6 +1,6 @@
 {
   "name": "react-native-ullid",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Simple ullid",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
