@@ -12,11 +12,11 @@ npm install react-native-ullid
 
 
 ```js
-import { multiply } from 'react-native-ullid';
+import { ullid } from 'react-native-ullid';
 
 // ...
 
-const result = multiply(3, 7);
+const result = ullid();
 ```
 
 
