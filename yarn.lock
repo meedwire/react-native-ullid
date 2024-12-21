@@ -10610,9 +10610,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-ullid-example@workspace:example":
+"react-native-ulid-example@workspace:example":
   version: 0.0.0-use.local
-  resolution: "react-native-ullid-example@workspace:example"
+  resolution: "react-native-ulid-example@workspace:example"
   dependencies:
     "@babel/core": ^7.25.2
     "@babel/preset-env": ^7.25.3
@@ -10629,9 +10629,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-ullid@workspace:.":
+"react-native-ulid@workspace:.":
   version: 0.0.0-use.local
-  resolution: "react-native-ullid@workspace:."
+  resolution: "react-native-ulid@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0

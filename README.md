@@ -1,22 +1,22 @@
-# react-native-ullid
+# react-native-ulid
 
-Simple ullid
+Simple ulid
 
 ## Installation
 
 ```sh
-npm install react-native-ullid
+npm install react-native-ulid
 ```
 
 ## Usage
 
 
 ```js
-import { ullid } from 'react-native-ullid';
+import { ulid } from 'react-native-ulid';
 
 // ...
 
-const result = ullid();
+const result = ulid();
 ```
 
 

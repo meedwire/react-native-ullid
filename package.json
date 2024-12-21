@@ -1,7 +1,7 @@
 {
-  "name": "react-native-ullid",
+  "name": "react-native-ulid",
   "version": "1.1.0",
-  "description": "Simple ullid",
+  "description": "Simple ulid",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -37,7 +37,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-ullid-example",
+    "example": "yarn workspace react-native-ulid-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -52,14 +52,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meedwire/react-native-ullid.git"
+    "url": "git+https://github.com/meedwire/react-native-ulid.git"
   },
   "author": "meedwire <meedwire@gmail.com> (https://github.com/meedwire)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/meedwire/react-native-ullid/issues"
+    "url": "https://github.com/meedwire/react-native-ulid/issues"
   },
-  "homepage": "https://github.com/meedwire/react-native-ullid#readme",
+  "homepage": "https://github.com/meedwire/react-native-ulid#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -183,7 +183,7 @@
     ]
   },
   "codegenConfig": {
-    "name": "RNUllidSpec",
+    "name": "RNUlidSpec",
     "type": "modules",
     "jsSrcsDir": "src",
     "outputDir": {
@@ -191,7 +191,7 @@
       "android": "android/generated"
     },
     "android": {
-      "javaPackageName": "com.ullid"
+      "javaPackageName": "com.ulid"
     },
     "includesGeneratedCode": true
   },

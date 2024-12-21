@@ -1,4 +1,4 @@
-package ullid.example
+package ulid.example
 
 import android.app.Application
 import com.facebook.react.PackageList

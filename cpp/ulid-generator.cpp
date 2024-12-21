@@ -1,6 +1,6 @@
-#include "ullid-generator.h"
+#include "ulid-generator.h"
 
-std::string ULLIDGenerator::generate() {
+std::string ULIDGenerator::generate() {
     auto now = std::chrono::system_clock::now();
     auto duration = now.time_since_epoch();
     uint64_t timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(duration).count();
@@ -12,7 +12,7 @@ std::string ULLIDGenerator::generate() {
     return toBase62(timestamp, 10) + toBase62(randomPart, 16);
 }
 
-std::string ULLIDGenerator::toBase62(uint64_t value, size_t length) {
+std::string ULIDGenerator::toBase62(uint64_t value, size_t length) {
     const char base62Chars[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     std::string result(length, '0');
 

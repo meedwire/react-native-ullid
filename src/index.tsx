@@ -1,5 +1,5 @@
-import Ullid from './NativeUllid';
+import Ulid from './NativeUlid';
 
-export function ullid(): string {
-  return Ullid.ULLID();
+export function ulid(): string {
+  return Ulid.ULID();
 }

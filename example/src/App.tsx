@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { ullid } from 'react-native-ullid';
+import { ulid } from 'react-native-ulid';
 
-const result = ullid();
+const result = ulid();
 
 export default function App() {
   return (

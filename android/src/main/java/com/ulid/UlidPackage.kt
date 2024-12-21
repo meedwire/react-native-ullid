@@ -1,4 +1,4 @@
-package com.ullid
+package com.ulid
 
 import com.facebook.react.BaseReactPackage
 import com.facebook.react.bridge.NativeModule
@@ -7,10 +7,10 @@ import com.facebook.react.module.model.ReactModuleInfo
 import com.facebook.react.module.model.ReactModuleInfoProvider
 import java.util.HashMap
 
-class UllidPackage : BaseReactPackage() {
+class UlidPackage : BaseReactPackage() {
   override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
-    return if (name == UllidModule.NAME) {
-      UllidModule(reactContext)
+    return if (name == UlidModule.NAME) {
+      UlidModule(reactContext)
     } else {
       null
     }
@@ -19,9 +19,9 @@ class UllidPackage : BaseReactPackage() {
   override fun getReactModuleInfoProvider(): ReactModuleInfoProvider {
     return ReactModuleInfoProvider {
       val moduleInfos: MutableMap<String, ReactModuleInfo> = HashMap()
-      moduleInfos[UllidModule.NAME] = ReactModuleInfo(
-        UllidModule.NAME,
-        UllidModule.NAME,
+      moduleInfos[UlidModule.NAME] = ReactModuleInfo(
+        UlidModule.NAME,
+        UlidModule.NAME,
         false,  // canOverrideExistingModule
         false,  // needsEagerInit
         true,  // hasConstants
